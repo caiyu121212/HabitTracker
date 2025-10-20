@@ -6,7 +6,7 @@ from datetime import date
 # 添加 src 到路径，确保导入正常工作
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from database.models import Habit, HabitRecord
+from database.models import Habit,HabitRecord
 
 
 class TestModels(unittest.TestCase):

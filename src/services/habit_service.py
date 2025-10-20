@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from datetime import datetime, date
 from typing import List, Optional, Dict
-from ..database.models import Habit, HabitRecord
+from database.models import Habit, HabitRecord
 
 
 class HabitService:

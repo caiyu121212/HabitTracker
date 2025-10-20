@@ -12,7 +12,11 @@ class Habit(Base):
     name = Column(String(100),nullable=False,unique=True)
     description = Column(Text)
     category = Column(String(100))
+    target_frequency = Column(String(20))
+    target_value = Column(Float,default=1.0)
+    unit = Column(String(100))
     created_at = Column(DateTime,default=datetime.utcnow)
+    updated_at = Column(DateTime,default=datetime.utcnow,onupdate=datetime.utcnow)
 
     def __repr__(self):
         return f"<Habit(id={self.id},name='{self.name}')>"
